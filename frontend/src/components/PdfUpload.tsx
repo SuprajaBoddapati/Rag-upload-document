@@ -177,7 +177,7 @@ function PdfUpload({
 
       const response =
         await axios.post<UploadResponse>(
-          "http://127.0.0.1:8000/upload",
+          `${import.meta.env.VITE_API_URL}/upload`,
           formData,
           {
             headers: {
